@@ -4,11 +4,17 @@
     <dimen name="imagePaddingSides">30dp</dimen>
     <dimen name="imagePaddingTop">60dp</dimen>
     <dimen name="imagePaddingBottom">200dp</dimen>
-    <dimen name="nameMargin">20dp</dimen>
+    <dimen name="imageElevation">10dp</dimen>
+    <dimen name="nameMarginTop">20dp</dimen>
     <dimen name="nameSize">30sp</dimen>
+    <dimen name="nameElevation">7dp</dimen>
     <dimen name="infoSize">24sp</dimen>
+    <dimen name="infoMarginTop">5dp</dimen>
+    <dimen name="infoMarginSide">20dp</dimen>
+    <dimen name="infoElevation">5dp</dimen>
     <dimen name="buttonSize">150dp</dimen>
     <dimen name="buttonGap">30dp</dimen>
-    <dimen name="buttonPadding">20dp</dimen>
+    <dimen name="buttonPaddingBottom">20dp</dimen>
+    <dimen name="buttonPaddingSide">20dp</dimen>
     <dimen name="buttonTextSize">14sp</dimen>
 </resources>

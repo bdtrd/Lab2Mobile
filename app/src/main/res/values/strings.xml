@@ -8,4 +8,10 @@
     <string name="name4">Overseas Guests</string>
     <string name="name5">Holy Spring</string>
     <string name="author">Nicholas Roerich</string>
+    <string name="year1" translatable="false">1924</string>
+    <string name="year2" translatable="false">1912</string>
+    <string name="year3" translatable="false">1924</string>
+    <string name="year4" translatable="false">1901</string>
+    <string name="year5" translatable="false">1945</string>
+    <string name="infoTemplate" translatable="false">%1$s (%2$s)</string>
 </resources>
