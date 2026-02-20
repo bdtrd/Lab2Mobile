@@ -7,13 +7,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/matchConstraints"
+        android:layout_height="@dimen/matchConstraints"
+        android:layout_marginStart="@dimen/imagePaddingSides"
+        android:layout_marginEnd="@dimen/imagePaddingSides"
+        android:layout_marginTop="@dimen/imagePaddingTop"
+        android:layout_marginBottom="@dimen/imagePaddingBottom"
+        android:src="@drawable/veduschaya"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nameMargin"
+        android:textSize="@dimen/nameSize"
+        android:text="@string/name1"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/infoSize"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonPrev"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/buttonGap"
+        android:layout_marginBottom="@dimen/buttonPadding"
+        android:text="@string/buttonPrev"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonNext"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonPadding"
+        android:text="@string/buttonNext"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonPrev"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Lab2Mobile</string>
+    <string name="app_name">Roerich\'s Gallery</string>
+    <string name="buttonPrev">Previous</string>
+    <string name="buttonNext">Next</string>
+    <string name="name1">She Who Leads</string>
+    <string name="name2">Solveig\'s Song</string>
+    <string name="name3">Everest Range</string>
+    <string name="name4">Overseas Guests</string>
+    <string name="name5">Holy Spring</string>
+    <string name="author">Nicholas Roerich</string>
 </resources>
