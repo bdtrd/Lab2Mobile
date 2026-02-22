@@ -4,5 +4,6 @@ data class Artwork(
     val name: Int,
     val author: Int,
     val year: Int,
-    val imageID: Int
+    val imageID: Int,
+    val contentDescription: Int
 )

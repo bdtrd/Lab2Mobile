@@ -13,10 +13,10 @@
         android:layout_width="@dimen/matchConstraints"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:layout_marginStart="@dimen/imagePaddingSides"
-        android:layout_marginEnd="@dimen/imagePaddingSides"
-        android:layout_marginTop="@dimen/imagePaddingTop"
-        android:layout_marginBottom="@dimen/imagePaddingBottom"
+        android:layout_marginStart="@dimen/imageMarginSides"
+        android:layout_marginEnd="@dimen/imageMarginSides"
+        android:layout_marginTop="@dimen/imageMarginTop"
+        android:layout_marginBottom="@dimen/imageMarginBottom"
         android:elevation="@dimen/imageElevation"
         android:background="@color/black"
 
@@ -29,9 +29,11 @@
 
     <TextView
         android:id="@+id/textName"
-        android:layout_width="@dimen/matchConstraints"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/nameMarginTop"
+        android:paddingStart="@dimen/textPadding"
+        android:paddingEnd="@dimen/textPadding"
         android:textSize="@dimen/nameSize"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -39,22 +41,22 @@
         android:elevation="@dimen/nameElevation"
 
         app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="@id/imageView"
-        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
 
         tools:text="@string/name1"/>
 
     <TextView
         android:id="@+id/textInfo"
-        android:layout_width="@dimen/matchConstraints"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/infoSize"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:background="@color/textBG"
         android:layout_marginTop="@dimen/infoMarginTop"
-        android:layout_marginStart="@dimen/infoMarginSide"
-        android:layout_marginEnd="@dimen/infoMarginSide"
+        android:paddingStart="@dimen/textPadding"
+        android:paddingEnd="@dimen/textPadding"
         android:elevation="@dimen/infoElevation"
 
         app:layout_constraintTop_toBottomOf="@id/textName"
@@ -72,7 +74,8 @@
         android:text="@string/buttonPrev"
         android:textSize="@dimen/buttonTextSize"
         android:textColor="@color/white"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/buttons"
+        android:contentDescription="@string/buttonPrevTalkback"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -86,7 +89,8 @@
         android:text="@string/buttonNext"
         android:textSize="@dimen/buttonTextSize"
         android:textColor="@color/white"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/buttons"
+        android:contentDescription="@string/buttonNextTalkback"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

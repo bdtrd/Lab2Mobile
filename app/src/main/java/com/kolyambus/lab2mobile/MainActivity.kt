@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         initializePointers()
         displayImage()
 
+
+        buttonPrev.isEnabled = savedInstanceState?.getBoolean("buttonPrevState") ?: false
+        buttonNext.isEnabled = savedInstanceState?.getBoolean("buttonNextState") ?: true
+
         buttonPrev.setOnClickListener { onTapPrev() }
         buttonNext.setOnClickListener { onTapNext() }
     }
@@ -42,18 +46,21 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt("index", index)
+        outState.putBoolean("buttonPrevState", buttonPrev.isEnabled)
+        outState.putBoolean("buttonNextState", buttonNext.isEnabled)
     }
 
     fun generateList(): List<Artwork> = listOf(
-        Artwork(R.string.name1, R.string.author, R.string.year1, R.drawable.veduschaya),
-        Artwork(R.string.name2, R.string.author, R.string.year2, R.drawable.solveig),
-        Artwork(R.string.name3, R.string.author, R.string.year3, R.drawable.everest),
-        Artwork(R.string.name4, R.string.author, R.string.year4, R.drawable.gosti),
-        Artwork(R.string.name5, R.string.author, R.string.year5, R.drawable.vesna)
+        Artwork(R.string.name1, R.string.author, R.string.year1, R.drawable.veduschaya, R.string.content1),
+        Artwork(R.string.name2, R.string.author, R.string.year2, R.drawable.solveig, R.string.content2),
+        Artwork(R.string.name3, R.string.author, R.string.year3, R.drawable.everest, R.string.content3),
+        Artwork(R.string.name4, R.string.author, R.string.year4, R.drawable.gosti, R.string.content4),
+        Artwork(R.string.name5, R.string.author, R.string.year5, R.drawable.vesna, R.string.content5)
     )
 
     fun displayImage() {
         image.setImageResource(imageList[index].imageID)
+        image.contentDescription = getString(imageList[index].contentDescription)
         name.text = getString(imageList[index].name)
         info.text = getString(R.string.infoTemplate, getString(imageList[index].author), getString(imageList[index].year))
     }

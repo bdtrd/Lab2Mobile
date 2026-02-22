@@ -5,4 +5,5 @@
     <color name="main">#FFD8D8FF</color>
     <color name="textBG">#FAAE</color>
     <color name="button">#5A4475</color>
+    <color name="buttonDisabled">#584F61</color>
 </resources>
