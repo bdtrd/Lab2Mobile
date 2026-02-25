@@ -7,13 +7,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/matchConstraints"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="@dimen/imageMarginSides"
+        android:layout_marginEnd="@dimen/imageMarginSides"
+        android:layout_marginTop="@dimen/imageMarginTop"
+        android:layout_marginBottom="@dimen/imageMarginBottom"
+        android:elevation="@dimen/imageElevation"
+        android:background="@color/black"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:src="@drawable/veduschaya"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nameMarginTop"
+        android:paddingStart="@dimen/textPadding"
+        android:paddingEnd="@dimen/textPadding"
+        android:textSize="@dimen/nameSize"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@color/textBG"
+        android:elevation="@dimen/nameElevation"
+
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:text="@string/name1"/>
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/infoSize"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@color/textBG"
+        android:layout_marginTop="@dimen/infoMarginTop"
+        android:paddingStart="@dimen/textPadding"
+        android:paddingEnd="@dimen/textPadding"
+        android:elevation="@dimen/infoElevation"
+
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        app:layout_constraintStart_toStartOf="@id/textName"
+        app:layout_constraintEnd_toEndOf="@id/textName"
+
+        tools:text="@string/author"/>
+
+    <Button
+        android:id="@+id/buttonPrev"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/buttonPaddingSide"
+        android:layout_marginBottom="@dimen/buttonPaddingBottom"
+        android:text="@string/buttonPrev"
+        android:textSize="@dimen/buttonTextSize"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/buttons"
+        android:contentDescription="@string/buttonPrevTalkback"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonPaddingBottom"
+        android:layout_marginEnd="@dimen/buttonPaddingSide"
+        android:text="@string/buttonNext"
+        android:textSize="@dimen/buttonTextSize"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/buttons"
+        android:contentDescription="@string/buttonNextTalkback"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

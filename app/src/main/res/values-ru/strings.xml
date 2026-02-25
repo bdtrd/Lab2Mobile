@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Галерея Рериха</string>
+    <string name="buttonPrev">Предыдущий</string>
+    <string name="buttonNext">Следующий</string>
+    <string name="name1">Ведущая</string>
+    <string name="name2">Песня Сольвейг</string>
+    <string name="name3">Хребет Эвереста</string>
+    <string name="name4">Заморские гости</string>
+    <string name="name5">Весна священная</string>
+    <string name="author">Николай Рерих</string>
+    <string name="content1">Женская фигура ведёт за собой людей по горной тропе, суровый пейзаж, сдержанные холодные тона, ощущение движения и духовного пути.</string>
+    <string name="content2">Небольшая деревянная изба на каменистом склоне среди высоких сосен, вдали горный пейзаж в дымке, спокойная уединённая атмосфера.</string>
+    <string name="content3">Горная цепь с высокими заснеженными вершинами, резкие контрасты света и тени, холодные синие и белые оттенки, чувство величия природы.</string>
+    <string name="content4">Древние ладьи с воинами подплывают к берегу, яркие декоративные цвета, вода и небо образуют ритмичный узор, ощущение прибытия и события.</string>
+    <string name="content5">Фигуры людей в обрядовом действии на открытом пространстве, насыщенные контрастные цвета, динамичная композиция, ощущение ритуала и энергии.</string>
+    <string name="buttonPrevTalkback">Показать предыдущую картину</string>
+    <string name="buttonNextTalkback">Показать следующую картину</string>
+</resources>

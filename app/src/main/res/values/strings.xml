@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Lab2Mobile</string>
+    <string name="app_name">Roerich\'s Gallery</string>
+    <string name="buttonPrev">Previous</string>
+    <string name="buttonNext">Next</string>
+    <string name="name1">She Who Leads</string>
+    <string name="name2">Solveig\'s Song</string>
+    <string name="name3">Everest Range</string>
+    <string name="name4">Overseas Guests</string>
+    <string name="name5">Holy Spring</string>
+    <string name="author">Nicholas Roerich</string>
+    <string name="year1" translatable="false">1924</string>
+    <string name="year2" translatable="false">1912</string>
+    <string name="year3" translatable="false">1924</string>
+    <string name="year4" translatable="false">1901</string>
+    <string name="year5" translatable="false">1945</string>
+    <string name="infoTemplate" translatable="false">%1$s (%2$s)</string>
+    <string name="content1">A female figure leads people along a mountain path, austere landscape, restrained cool colors, a sense of movement and spiritual journey.</string>
+    <string name="content2">A small wooden cabin on a rocky slope among tall pine trees, with a hazy mountain landscape in the distance, a calm secluded atmosphere.</string>
+    <string name="content3">A mountain range with high snow-covered peaks, sharp contrasts of light and shadow, cold blue and white tones, a sense of natural grandeur.</string>
+    <string name="content4">Ancient boats with warriors approach the shore, vivid decorative colors, water and sky forming a rhythmic pattern, a sense of arrival and occasion.</string>
+    <string name="content5">Figures engaged in a ritual in an open space, rich contrasting colors, dynamic composition, a sense of ceremony and energy.</string>
+    <string name="buttonPrevTalkback">Show previous painting</string>
+    <string name="buttonNextTalkback">Show next painting</string>
 </resources>
